@@ -8,5 +8,3 @@ sub fact{
 	$res=$res+1;
 	print "$fact\n" }
 }
-$facty = \&fact;
-print &$facty;
