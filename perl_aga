@@ -1,0 +1,12 @@
+print "Hello, world!\n";
+$s = <STDIN>;
+$res = 0;
+$fact = 1;
+sub fact{
+ while ($res<=($s-1)) {
+	$fact = $fact*($res+1);
+	$res=$res+1;
+	print "$fact\n" }
+}
+$facty = \&fact;
+print &$facty;
