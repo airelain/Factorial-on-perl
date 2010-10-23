@@ -9,3 +9,4 @@ sub fact{
 	print "$fact\n" }
 }
 $facty = \&fact;
+print &$facty;
